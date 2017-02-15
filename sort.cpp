@@ -63,9 +63,10 @@ void selectionSort (auto& data){
 		
 		  swap (data[i], data[min]);
 		  
-		    if (i %  20000 == 0) 
+		    if ( (i %  20000 == 0) && (i > 0) ) 
 		  {
 			 cout << "Number of passes" << i << endl;
+			
 		  }
 			 
 	}//end for 
