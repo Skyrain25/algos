@@ -60,7 +60,14 @@ void selectionSort (auto& data){
 			  if (data[j]<data[min])
 			  min=j; //update min index
 		  }//end for 
+		
 		  swap (data[i], data[min]);
+		  
+		    if (i %  20000 == 0) 
+		  {
+			 cout << "Number of passes" << i << endl;
+		  }
+			 
 	}//end for 
   }
 
